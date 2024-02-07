@@ -2,6 +2,7 @@ cd /home/devuser
 DOCKER_LINK=$1
 DATA_DIR="/home/devuser/docker_persistent_volume"
 mkdir /home/devuser/docker_persistent_volume
+mkdir /home/devuser/docker_persistent_volume/sentinel
 echo "Hostname=$2" > "$DATA_DIR/netskope_config.env"
 echo "Token=$3" >> "$DATA_DIR/netskope_config.env"
 echo "WorkspaceKey=$4" >> "$DATA_DIR/sentinel_config.env"
