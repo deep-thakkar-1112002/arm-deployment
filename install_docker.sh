@@ -1,4 +1,4 @@
-DOCKER_LINK = $1
+DOCKER_LINK=$1
 DATA_DIR="/home/devuser/docker_persistent_volume"
 mkdir /home/devuser/docker_persistent_volume
 echo "Hostname=$2" > "$DATA_DIR/netskope_config.env"
