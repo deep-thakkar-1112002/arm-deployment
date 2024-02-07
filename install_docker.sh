@@ -1,3 +1,4 @@
+cd /home/devuser
 DOCKER_LINK=$1
 DATA_DIR="/home/devuser/docker_persistent_volume"
 mkdir /home/devuser/docker_persistent_volume
