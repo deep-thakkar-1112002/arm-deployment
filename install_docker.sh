@@ -7,6 +7,9 @@ echo "Hostname=$2" > "$DATA_DIR/netskope_config.env"
 echo "Token=$3" >> "$DATA_DIR/netskope_config.env"
 echo "WorkspaceKey=$4" >> "$DATA_DIR/sentinel_config.env"
 echo "WorkspaceId=$5" >> "$DATA_DIR/sentinel_config.env"
+echo "BackoffRetryCount=$6" > "$DATA_DIR/general_config.env"
+echo "BackoffSleepTime=$7" >> "$DATA_DIR/general_config.env"
+echo "*IdleTimeout=$8" >> "$DATA_DIR/general_config.env"
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 sudo docker pull $DOCKER_LINK
