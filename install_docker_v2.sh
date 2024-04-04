@@ -14,6 +14,6 @@ echo "IdleTimeout=$8" >> "$DATA_DIR/general_config.env"
 echo "SeekTimestamp=$SEEK_TIMESTAMP" >> "$DATA_DIR/seek_timestamp.env"
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
-wget "$file_url"
+wget "https://github.com/deep-thakkar-1112002/arm-deployment/raw/main/netskope_webtx_manual_operate.py"
 sudo docker pull $DOCKER_LINK
 sudo docker run -d -v $(pwd)/docker_persistent_volume:/app $DOCKER_LINK
